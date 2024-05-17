@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 22vw 1fr;
+    grid-template-rows: 15vh 15vh 1fr;
+}
+
+.dashboard-container { 
+    background-color: aqua;
+    grid-row: 1 / span 3;
+}
+
+.searchbar-container {
+    background-color: red;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.welcome-container {
+    background-color: aquamarine;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.content-container {
+    background-color: blue;
+    grid-column: 2;
+    grid-row: 3;
+}
