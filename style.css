@@ -9,12 +9,12 @@ body {
 .main-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20vw 4fr;
+    grid-template-columns: 300px 4fr;
     grid-template-rows: 15vh 15vh 1fr;
 }
 
 .dashboard-container { 
-    background-color: aqua;
+    background-color: aliceblue;
     grid-row: 1 / span 3;
 }
 
@@ -38,12 +38,25 @@ body {
 
 .dashboard-container {
     display: grid;
-    grid-template-rows: 13vh 50vh 30vh; 
-    gap: 30px;  
+    grid-template-rows: 9vh 50vh 30vh; 
+    gap: 20px;  
 }
 
-#icon, #choices, #settings {
-    border: 1px solid blue;
+#icon {
+    display: grid;
+    grid-template-columns: .15fr .8fr;
+    align-self: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#choice {
+    display: grid;
+    grid-template-columns: .15fr .8fr;
+    align-self: center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 1.14rem; 
 }
 
 #choices, #settings  {
@@ -100,6 +113,37 @@ body {
     display: grid;
     grid-template-columns: repeat(3, .1fr);
     justify-content: end;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.house-container > div {
+    border: 2px solid red;
+}
+
+#card {
+    height: 200px;
+}
+
+.house-container {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 15px;
+}
+
+.news-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.news-container > div > div {
+    border: 2px solid red;
+    height: 293px;
+    
 }
 
 
