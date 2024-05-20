@@ -54,6 +54,7 @@ body {
     grid-column: 2;
     grid-row: 2;
     color: rgb(14, 48, 78);
+    border-bottom: 1px dotted black;
 }
 
 .content-container {
@@ -174,10 +175,6 @@ body {
     grid-template-columns: 3fr 1fr;
 }
 
-.house-container > div {
-    border: 2px solid red;
-}
-
 #card {
     height: 200px;
 }
@@ -204,5 +201,44 @@ body {
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.content-container {
+    background-color: aliceblue;
+}
+
+#card, #news, #trending {
+    background-color: rgb(236, 243, 249);
+    border: 1px dotted black;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(14, 48, 78);
+}
+
+#trending-wrapper{
+    margin-top: 9px;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-photos {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    gap: 13px;
+    fill: rgb(14, 48, 78);
+}
+
+.card-photos > img:hover{
+    transform: scale(1.1);
+}
+
+.card-top {
+    margin-top: 10px;
 }
 
