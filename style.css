@@ -266,3 +266,19 @@ body {
     border: none;
 }
 
+#trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.trending-slide {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-left: 26px; 
+}
+
+.trending-slide img {
+    width: 20px;
+    height: 20px;
+}
