@@ -161,6 +161,11 @@ body {
     margin-right: 50px;
 }
 
+#right-welcome > button:hover {
+    background-color: rgb(119, 86, 212);
+    transform: scale(1.1);
+}
+
 #btn {
     background-color: rgb(14, 48, 78);
     width: 110px;
@@ -240,5 +245,24 @@ body {
 
 .card-top {
     margin-top: 10px;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.news-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: start;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(14, 48, 78); 
+}
+
+.news-box:last-child {
+    border: none;
 }
 
